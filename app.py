@@ -3,9 +3,7 @@ import pandas as pd
 from scripts.db_config import get_connection
 from scripts.queries_and_insights import sql_queries, insights
 
-st.set_page_config( page_title="OLA Ride Analysis Dashboard",
-                   page_icon="🚕",
-                   layout="wide")
+st.set_page_config( page_title="OLA Ride Analysis Dashboard",page_icon="🚕",layout="wide")
 
 st.title("🚕 OLA Ride Analysis Dashboard")
 st.write("Interactive analysis of OLA rides data using MySQL, and Streamlit.")
