@@ -13,10 +13,11 @@ load_dotenv()
 #     )
 
 def get_connection():
-    return pymysql.connect(
-        host = os.getenv('rail_host'),
-        user = os.getenv('rail_db_user'),
-        password = os.getenv('rail_pass'),
-        database = os.getenv('rail_db_name'),
-        port= int(os.getenv('rail_port'))
+    conn = pymysql.connect(
+    host=os.getenv("MYSQLHOST"),
+    port=int(os.getenv("MYSQLPORT")),
+    user=os.getenv("MYSQLUSER"),
+    password=os.getenv("MYSQLPASSWORD"),
+    database=os.getenv("MYSQLDATABASE")
     )
+    return conn
