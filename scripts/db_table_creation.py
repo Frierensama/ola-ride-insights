@@ -10,7 +10,7 @@ try:
     # table creation query.
     table_create_query = """ 
     create table ola_t (
-    Date DATE,
+    Date DATETIME,
     Time TIME,
 
     Booking_ID VARCHAR(20) PRIMARY KEY,
@@ -23,8 +23,8 @@ try:
     Pickup_Location VARCHAR(20),
     Drop_Location VARCHAR(20),
 
-    V_TAT DECIMAL(5,2),
-    C_TAT DECIMAL(5,2),
+    V_TAT FLOAT,
+    C_TAT FLOAT,
 
     Canceled_Rides_by_Customer VARCHAR(100),
     Canceled_Rides_by_Driver VARCHAR(100),
@@ -38,11 +38,11 @@ try:
 
     Ride_Distance INT,
 
-    Driver_Ratings DECIMAL(2,1),
-    Customer_Rating DECIMAL(2,1),
+    Driver_Ratings FLOAT,
+    Customer_Rating FLOAT,
 
-    TAT_Applicable TINYINT,
-    Rated_Ride_Applicable TINYINT
+    TAT_Applicable INT,
+    Rated_Ride_Applicable INT
     );
     """
     cursor.execute(query=table_create_query)
