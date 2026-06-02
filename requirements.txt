@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+pymysql
+sqlalchemy
+python-dotenv
