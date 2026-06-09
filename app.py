@@ -48,12 +48,12 @@ try:
 
     csv = df.to_csv(index=False)
 
-    st.download_button(
-        label="Download Results",
-        data=csv,
-        file_name="ola_query_results.csv",
-        mime="text/csv"
-    )
+    # st.download_button(
+    #     label="Download Results",
+    #     data=csv,
+    #     file_name="ola_query_results.csv",
+    #     mime="text/csv"
+    # )
 
     st.divider()
 
