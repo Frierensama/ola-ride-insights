@@ -69,7 +69,7 @@ sql_queries = {
     """
     SELECT SUM(Booking_Value) AS Total_Booking_Value
     FROM ola_t
-    WHERE Booking_Status = 'Success';
+    WHERE Incomplete_Rides = 'No';
     """,
 
     "List all incomplete rides along with the reason":
